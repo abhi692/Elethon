@@ -1,18 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
-
-    const handleClick = () => {
-        console.log("clicked");
-    }
 
   return (
 
     <div className='container'>
       <h1>Welcome to the Online Elethon</h1>
       <p className='first-para'>Learn more about the theme, rules, and prizes for our Elethon.</p>
-      <button onClick={handleClick} className='btn-1'>Learn More</button>
+      <Link to="/schedule">
+      <button className='btn-1'>Learn More</button>
+      </Link>
+      <Link to="/register">
       <button className='btn-2'>Register Now</button>
+      </Link>
     </div>
   );
 }
