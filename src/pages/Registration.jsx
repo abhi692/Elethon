@@ -33,7 +33,7 @@ const Register = () => {
       <p className="already-account">Already have an account?</p>
       <button className="login-button" type="submit">Login</button>
       </div>
-    <form className="register-form" onSubmit={handleSubmit}  style ={ { backgroundImage: "url('background for elethon.png')" } }>
+    <form className="register-form" onSubmit={handleSubmit}>
       <h1 className="register-title">Registration Form</h1>
       <label className="register-label">Name</label>
       <input className="register-input" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} required/>

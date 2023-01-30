@@ -89,6 +89,7 @@ h1:hover span {
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .registration-bg{
+  background-size: cover;
   color: #B3B6B7;
   font-family: 'Open Sans', sans-serif;
   font-size: 30px;
@@ -144,10 +145,20 @@ h1:hover span {
 }
 
 .register-title {
-
-  text-align: center;
-  margin-bottom: 20px;
-  padding-bottom: 0px;
+  font-family: 'Calligraffitti', cursive;
+  font-weight: 700;
+  font-size: 2rem;
+  text-shadow: -1px 1px 2px #ced0d3;
+  margin-left: 40%;
+  transform: translate(-25%,-10%);
+  letter-spacing: 0.02em;
+  color: #F9f1cc;
+  text-shadow: 5px 5px 0px #FFB650, 
+    2px 2px 0px #FFD662, 
+    5px 5px 0px  #FF80BF, 
+    8px 8px 0px #EF5097, 
+    10px 10px 0px #6868AC, 
+    13px 13px 0px #90B1E0;
 }
 
 .register-label {
