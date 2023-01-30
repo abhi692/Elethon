@@ -145,6 +145,7 @@ h1:hover span {
 }
 
 .register-title {
+  position: static;
   font-family: 'Calligraffitti', cursive;
   font-weight: 700;
   font-size: 2rem;
