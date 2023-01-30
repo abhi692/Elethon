@@ -3,7 +3,7 @@ import Home from './pages/Home';
 import Schedule from "./pages/Schedule";
 import Registration from './pages/Registration';
 import './App.css';
-import React, { Component }  from 'react';
+import React from 'react';
 
 function App() {
   return (

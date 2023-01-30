@@ -106,7 +106,7 @@ h1:hover span {
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
-  margin-top: 1.6%;
+  margin-top: 0.5%;
   margin-right: 5px;
   margin-left: 10px;
   cursor: pointer;
@@ -168,7 +168,7 @@ h1:hover span {
   border-radius: 7px;
   border: 1px solid #ccc;
   width: 100%;
-  color: #9194db;
+  color: #000000;
   box-shadow: 10px 10px;
 }
 
@@ -176,7 +176,7 @@ h1:hover span {
   display: flex;
   justify-content: end;
   margin-right: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .registration-bg{
@@ -188,23 +188,25 @@ h1:hover span {
 }
 
 .registration-button{
-  background-color: #4CAF50; /* Green */
+  background-color: #4CAF50;
+  margin:0 auto;
+  display:block;
+  margin-top: 20px;
+  height: 0.5in;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 10px 30px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer;
   border-radius: 8px;
+  font-size: 20px;
   box-shadow: 0px 0px 8px #888888;
   transition: all 0.3s ease-in-out;
-  margin-top: 150px;
-  position: absolute;
-  top: 75%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%)
+}
+
+.registration-button:hover {
+  background-color: #3e8e41;
+  box-shadow: 0px 0px 12px #888888;
+  transform: translateY(-2px);
 }

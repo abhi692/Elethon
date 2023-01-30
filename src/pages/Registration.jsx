@@ -9,6 +9,7 @@ const Register = () => {
 
   const handleSubmit = (e) =>{
     e.preventDefault();
+    alert("You have successfully registered for the Hackathon 2023")
 
     db.collection("students").add({
       name:name,
