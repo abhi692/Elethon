@@ -5,9 +5,10 @@ const Home = () => {
 
   return (
 
-    <div className='container'>
-      <h1>Welcome to the Online Elethon</h1>
-      <p className='first-para'>Learn more about the theme, rules, and prizes for our Elethon.</p>
+    <div className="container" style ={ { backgroundImage: "url('background for elethon.png')" } }>
+      <h1 className='animation'>Welcome to the Online <span>Hackathon</span></h1>
+      <p className='second-para'>Presented by Elewayte</p>
+      <p className='first-para'>Learn more about the theme, rules, and prizes for our Hackathon.</p>
       <Link to="/schedule">
       <button className='btn-1'>Learn More</button>
       </Link>

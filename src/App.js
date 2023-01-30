@@ -8,7 +8,7 @@ import React, { Component }  from 'react';
 function App() {
   return (
     <Router>
-      <div className="App" style ={ { backgroundImage: "url('background for elethon.png')" } }>
+      <div>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/register" element={<Registration/>}/>
