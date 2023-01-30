@@ -1,46 +1,55 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { db } from "../firebase";
 
-function Registration() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [phone, setPhone] = useState("");
-  
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log(name, email, password, phone);
-    // Perform registration logic here
-    // ...
-  };
+const Register = () => {
+  const [name,setName] = useState("");
+  const [email,setEmail] = useState("");
+  const [college,setCollege] = useState("");
+  const [contact,setContact] = useState("");
 
-  return (
+  const handleSubmit = (e) =>{
+    e.preventDefault();
+
+    db.collection("students").add({
+      name:name,
+      email:email,
+      college:college,
+      contact:contact,
+    })
+    .catch((error)=>{
+      alert(error.message)
+    })
+
+    setName("");
+    setEmail("");
+    setCollege("");
+    setContact("");
+  }
+
+  return(
     <div className="registration-bg" style ={ { backgroundImage: "url('background for elethon.png')" } }>
       <div className='already-account'>
-      <p>Already have an account?</p>
+      <p className="already-account">Already have an account?</p>
       <button className="login-button" type="submit">Login</button>
       </div>
-    <form className="register-form" onSubmit={handleSubmit}>
+    <form className="register-form" onSubmit={handleSubmit}  style ={ { backgroundImage: "url('background for elethon.png')" } }>
       <h1 className="register-title">Registration Form</h1>
-      <label className="register-label">
-        <i className="fas fa-user"></i>
-        <input className="register-input" type="text" placeholder="Name" value={name} onChange={e => setName(e.target.value)} required/>
-      </label>
-      <label className="register-label">
-        <i className="fas fa-envelope"></i>
-        <input className="register-input" type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} required/>
-      </label>
-      <label className="register-label">
-        <i className="fas fa-key"></i>
-        <input className="register-input" type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} required/>
-      </label>
-      <label className="register-label">
-        <i className="fas fa-phone"></i>
-        <input className="register-input" type="tel" placeholder="Phone Number" value={phone} onChange={e => setPhone(e.target.value)} required/>
-      </label>
+      <label className="register-label">Name</label>
+      <input className="register-input" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} required/>
+
+      <label className="register-label">Email</label>
+      <input className="register-input" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
+
+      <label className="register-label">College Name</label>
+      <input className="register-input" placeholder="College Name" value={college} onChange={(e) => setCollege(e.target.value)} required/>
+
+      <label className="register-label">Contact Number</label>
+      <input className="register-input" placeholder="Contact Number" value={contact} onChange={(e) => setContact(e.target.value)} required/>
+
       <button className="registration-button" type="submit">Register</button>
     </form>
     </div>
-  );
+  )
 }
 
-export default Registration;
+export default Register;
