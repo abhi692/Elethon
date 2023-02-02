@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { db } from "../firebase";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   const [name,setName] = useState("");
@@ -31,7 +32,9 @@ const Register = () => {
     <div className="registration-bg" style ={ { backgroundImage: "url('background for elethon.png')" } }>
       <div className='already-account'>
       <p className="already-account">Already have an account?</p>
-      <button className="login-button" type="submit">Login</button>
+      <Link to="/login">
+        <button className="login-button" type="submit">Login</button>
+      </Link>
       </div>
     <form className="register-form" onSubmit={handleSubmit}>
       <h1 className="register-title">Registration Form</h1>

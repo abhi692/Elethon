@@ -4,6 +4,7 @@ import Schedule from "./pages/Schedule";
 import Registration from './pages/Registration';
 import './App.css';
 import React from 'react';
+import Login from "./pages/Login";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/register" element={<Registration/>}/>
           <Route path="/schedule" element={<Schedule/>}/>
+          <Route path="/login" element={<Login/>}/>
         </Routes>
       </div>
     </Router>
