@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Home = () => {
 
   return (
-
+    <>
     <div className="container" style ={ { backgroundImage: "url('background for elethon.png')" } }>
       <h1 className='animation'>Welcome to the Online <span>Hackathon</span></h1>
       <p className='second-para'>Presented by Elewayte</p>
@@ -16,6 +16,7 @@ const Home = () => {
       <button className='btn-2'>Register Now</button>
       </Link>
     </div>
+    </>
   );
 }
 

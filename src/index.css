@@ -147,12 +147,12 @@ h1:hover span {
 
 .register-title {
   position: relative;
-  font-family: 'Calligraffitti', cursive;
+  font-family: "Calisto MT", Calisto MT;
   margin: auto;
   margin-top: 10px;
   display: flex;
   justify-content: center;
-  color: #F9f1cc;
+  color: #be36ac;
 }
 
 .register-label {
