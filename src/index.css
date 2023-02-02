@@ -176,6 +176,7 @@ h1:hover span {
 }
 
 .register-input {
+  font-size: small;
   padding: 10px;
   border-radius: 7px;
   border: 1px solid #ccc;
@@ -189,7 +190,7 @@ h1:hover span {
   display: flex;
   justify-content: end;
   margin-right: 20px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .registration-bg{
