@@ -9,8 +9,8 @@ const Home = () => {
       <h1 className='animation'>Welcome to the Online <span>Hackathon</span></h1>
       <p className='second-para'>Presented by Elewayte</p>
       <p className='first-para'>Learn more about the theme, rules, and prizes for our Hackathon.</p>
-      <Link to="/schedule">
-      <button className='btn-1'>Learn More</button>
+      <Link to="/blog">
+      <button className='btn-1'>Go to Blogs</button>
       </Link>
       <Link to="/register">
       <button className='btn-2'>Register Now</button>
