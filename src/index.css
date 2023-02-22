@@ -102,30 +102,23 @@ h1:hover span {
 }
 
 .login-button{
-  font-family: 'Calligraffitti', cursive;
-  background-color: #4CAF50; /* Green */
-  height: 0.5in;
+  background-color: #008CBA; /* Blue */
   border: none;
   color: white;
-  padding: 10px 30px;
+  padding: 8px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
-  margin-top: 0.5%;
-  margin-right: 5px;
-  margin-left: 10px;
+  font-size: 16px;
+  margin: 2px 8px;
   cursor: pointer;
-  border-radius: 8px;
-  box-shadow: 0px 0px 8px #888888;
-  transition: all 0.3s ease-in-out;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease-in-out;
 }
 
 .login-button:hover {
-  background-color: #3e8e41;
+  background-color: #00688B;
   box-shadow: 0px 0px 12px #888888;
   transform: translateY(-2px);
 }
@@ -137,7 +130,9 @@ h1:hover span {
 }
 
 .register-form {
-  margin: auto;
+  text-align: center;
+  margin-top: 80px;
+  margin-left: 500px;
   padding-top: 5px;
   padding-right: 50px;
   padding-left: 30px;
@@ -150,19 +145,23 @@ h1:hover span {
 }
 
 .register-title {
-  position: relative;
-  font-family: "Calisto MT", Calisto MT;
-  margin: auto;
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  color: #be36ac;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  color: #2fb6c2;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 1.2;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 .register-label {
   color: #F9f1cc;
   font-size: 20px;
-  font-family: 'Source Sans Pro';
+  font-family: "Helvetica Neue", sans-serif;
   display: flex;
   align-items: center;
   margin-bottom: 5px;
@@ -186,11 +185,12 @@ h1:hover span {
 }
 
 .already-account{
-  font-family: 'Calligraffitti', cursive;
+  font-family: "Helvetica Neue", sans-serif;
   display: flex;
   justify-content: end;
   margin-right: 20px;
-  margin-top: 5px;
+  margin-top: 18px;
+  float: right;
 }
 
 .registration-bg{
@@ -202,26 +202,23 @@ h1:hover span {
 }
 
 .registration-button{
-  font-family: 'Calligraffitti', cursive;
-  background-color: #4CAF50;
-  margin:0 auto;
-  display:block;
-  margin-top: 20px;
-  height: 0.5in;
+  background-color: #008CBA;
   border: none;
   color: white;
-  padding: 10px 30px;
+  padding: 12px 24px;
   text-align: center;
   text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 15px 10px;
   cursor: pointer;
-  border-radius: 8px;
-  font-size: 20px;
-  box-shadow: 0px 0px 8px #888888;
-  transition: all 0.3s ease-in-out;
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease-in-out;
 }
 
 .registration-button:hover {
-  background-color: #3e8e41;
+  background-color: #00688B;
   box-shadow: 0px 0px 12px #888888;
   transform: translateY(-2px);
 }
@@ -300,6 +297,9 @@ h1:hover span {
   background-color: #ffffff;
   border: 1px solid #ececec;
   margin: 20px;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  -moz-box-shadow:    3px 3px 5px 6px #ccc; 
+  box-shadow:         3px 3px 5px 6px #ccc;
 }
 
 .blog-img{
@@ -327,11 +327,13 @@ h1:hover span {
 }
 
 .blog-text span{
+  font-weight: 700;
   color: #f33c3c;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .blog-text2 span{
+  font-weight: 700;
   color: #f33c3c;
   font-size: 1.7rem;
 }
@@ -384,4 +386,61 @@ h1:hover span {
   font-size: x-large;
   color: #ffffff;
   font-weight: 800;
+}
+
+.blog-heading h3{
+  color: #ffffff;
+  text-decoration: underline;
+  text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+
+.navbar1{
+  float: left;
+  margin: 20px 20px;
+}
+
+.homepage{
+  background-color: #008CBA; /* Blue */
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.homepage:hover{
+  background-color: #00688B;
+}
+
+.homepage2{
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 12px 24px; 
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.homepage2:hover{
+  background-color: #00688B;
+}
+
+.home-div{
+  margin-top: 10px;
+  margin-left: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }

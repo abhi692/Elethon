@@ -30,8 +30,13 @@ const Register = () => {
 
   return(
     <div className="registration-bg" style ={ { backgroundImage: "url('background for elethon.png')" } }>
+      <div className="navbar1">
+      <Link to="/">
+        <button className="homepage" type="submit">Home</button>
+      </Link>
+      </div>
       <div className='already-account'>
-      <p className="already-account">Already have an account?</p>
+      <p>Already have an account?</p>
       <Link to="/login">
         <button className="login-button" type="submit">Login</button>
       </Link>

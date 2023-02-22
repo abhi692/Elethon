@@ -1,11 +1,11 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import img1 from '../assests/blogpic1.jpg';
 import img2 from '../assests/blogpic2.jpg';
 import img3 from '../assests/blogpic3.jpg';
 import img4 from '../assests/blogpic4.jpg';
 import img5 from '../assests/blogpic5.jpg';
 import img6 from '../assests/blogpic6.jpg';
-import img7 from '../assests/blogbackground.jpg';
 import img8 from '../assests/blogpic8.jpg';
 import img9 from '../assests/blogpic9.png';
 import img10 from '../assests/blogpic10.jpg';
@@ -16,7 +16,12 @@ import img13 from '../assests/blogpic13.jpg';
 const Schedule = () => {
 
   return (
-    <section id='blog' style ={ { backgroundImage: `url(${img7})` } }>
+    <section id='blog' style ={ { backgroundImage: "url('background for elethon.png')" } }>
+      <div className='home-div'>
+        <Link to="/">
+          <button className="homepage2" type="submit">Home</button>
+        </Link>
+      </div>
       <div className="blog-heading">
         <span>Elewayte Recent Posts</span>
         <h3>Elewayte Blogs</h3>
