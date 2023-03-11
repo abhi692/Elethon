@@ -4,11 +4,17 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
 function Login() {
+    
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 h-screen w-full">
         <div className="hidden sm:block">
             <img className='w-full h-full object-cover' src="background for elethon.png" alt=""/>
+            <div>
+            <Link to="/">
+            <button className='login-home'>Home</button>
+            </Link>
+        </div>
         </div>
 
         <div className='bg-purple-700 flex flex-col justify-center'>

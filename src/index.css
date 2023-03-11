@@ -400,7 +400,7 @@ h1:hover span {
 }
 
 .homepage{
-  background-color: #008CBA; /* Blue */
+  background-color: #008CBA;
   border: none;
   color: white;
   padding: 12px 24px;
@@ -416,7 +416,8 @@ h1:hover span {
 }
 
 .homepage:hover{
-  background-color: #00688B;
+  background-color: #8E44AD;
+  transform: scale(1.1);
 }
 
 .homepage2{
@@ -434,7 +435,8 @@ h1:hover span {
 }
 
 .homepage2:hover{
-  background-color: #00688B;
+  background-color: #8E44AD;
+  transform: scale(1.1);
 }
 
 .home-div{
@@ -443,4 +445,61 @@ h1:hover span {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.login-home{
+  color: #ffffff;
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 350px 350px;
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 2px 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease-in-out;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.login-home:hover {
+  background-color: #00688B;
+  box-shadow: 0px 0px 12px #888888;
+  transform: translateY(-2px);
+}
+
+.elewayte-logo {
+  position:fixed; 
+	top:30px; 
+	left: 580px;
+  width: 25%;
+}
+
+.btn-5 {
+  position: absolute;
+  left: 140px;
+  top: 27px;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 18px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-5:hover {
+  background-color: #8E44AD;
+  transform: scale(1.1);
 }

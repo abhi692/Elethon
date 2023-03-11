@@ -34,6 +34,9 @@ const Register = () => {
       <Link to="/">
         <button className="homepage" type="submit">Home</button>
       </Link>
+      <Link to="/date">
+        <button className='btn-5'>Schedule</button>
+        </Link>
       </div>
       <div className='already-account'>
       <p>Already have an account?</p>
