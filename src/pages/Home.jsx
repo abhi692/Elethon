@@ -1,12 +1,59 @@
 import React from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import elewayte_logo from '../assests/elewayte_logo.png';
+import 'boxicons';
 
 const Home = () => {
+  // const [state, setState] = useState(false);
+  // const setState = () =>{
+
+  // }
+
 
   return (
     <>
     <div className="container" style ={ { backgroundImage: "url('background for elethon.png')" } }>
+    <div className="sidebar">
+      <div className="logo_content">
+        <div className="logo">
+          <div className="logo_name"></div>
+          <i class='bx bx-menu' id='btn'></i><br/>
+          <ul className='nav_list'>
+            <li>
+              <a href='#'> 
+              <i class='bx bxs-calendar'></i>
+              <span className='links_name'> Schedule</span>
+              </a>
+              <span className='tooltip'>Schedule</span>
+            </li>
+            <li>
+              <a href='#'>
+              <i class='bx bxl-blogger'></i>
+              <span className='links_name'> Blogs</span>
+              </a>
+              <span className='tooltip'>Blogs</span>
+            </li>
+            <li>
+              <a href='#'>
+              <i class='bx bx-trophy'></i>
+              <span className='links_name'> FAQ & Prizes</span>
+              </a>
+              <span className='tooltip'>FAQ & Prizes</span>
+            </li>
+            <li>
+              <a href='#'>
+              <i class='bx bxs-calendar'></i>
+              <span className='links_name'> Register</span>
+              </a>
+              <span className='tooltip'>Register</span>
+            </li>
+          </ul>
+          
+
+        </div>
+      </div>
+    </div>
       <div>
         <img className='elewayte-logo' src={elewayte_logo} alt='company_logo'/>
       </div>
